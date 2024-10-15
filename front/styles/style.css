@@ -1,0 +1,560 @@
+/* ---------------spinner-------------- */
+.cont-spinner {
+  display: flex;
+  align-items: center;
+  height: 50vh;
+}
+.spinner {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  display: grid;
+  border: 5.5px solid #0000;
+  border-radius: 50%;
+  border-color: #dbdcef #0000;
+  animation: spinner-e04l1k 1s infinite linear;
+}
+
+.spinner::before,
+.spinner::after {
+  content: "";
+  grid-area: 1/1;
+  margin: 2.2px;
+  border: inherit;
+  border-radius: 50%;
+}
+
+.spinner::before {
+  border-color: rgb(23, 214, 214);
+  animation: inherit;
+  animation-duration: 0.5s;
+  animation-direction: reverse;
+}
+
+.spinner::after {
+  margin: 8.9px;
+}
+
+@keyframes spinner-e04l1k {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+/*----------------modal--------------*/
+.modal .modal-dialog {
+  width: 400px;
+  margin-top: 10px;
+}
+.modal .modal-dialog .modal-content .modal-header {
+  padding: 7px 16px;
+}
+.modal .modal-dialog .modal-content .modal-header h1 {
+  color: white;
+}
+.modal .modal-dialog .modal-content .modal-header button {
+  background-color: white !important;
+  font-size: 10px;
+  padding: 6px;
+}
+.modal .modal-dialog .modal-content,
+.modal .modal-dialog .modal-content .modal-body .card {
+  background-color: rgb(0, 0, 0) !important;
+}
+.modal .modal-dialog .modal-content .modal-body .card .body-card p,
+.modal .modal-dialog .modal-content .modal-body .card .body-card h4,
+.modal .modal-dialog .modal-content .modal-body .card .body-card ul li {
+  color: rgb(172, 172, 172);
+}
+.modal .modal-dialog .modal-content .modal-body .card .cont-img a {
+  display: none;
+}
+.modal .modal-dialog .modal-content .modal-body .card .cont-img img {
+  height: 320px !important;
+  width: 95% !important;
+  margin: 0 auto;
+}
+/* ---------------gral-------------- */
+main {
+  padding-top: 80px;
+  width: 100%;
+  font-family: none;
+}
+
+.main {
+  min-height: 57.6vh;
+  background-image: url(../assets/img/fondo-henry.jpg);
+  background-size: cover;
+  padding: 20px 0;
+}
+
+.main h2 {
+  text-align: center;
+  margin: 0 0 20px 0;
+  padding: 15px 0;
+  background-color: rgba(143, 143, 143, 0.658);
+  color: white;
+  border-bottom: 2px solid rgb(23, 214, 214);
+  border-top: 2px solid rgb(23, 214, 214);
+}
+.main .cont-cards {
+  display: flex;
+  gap: 10px;
+  width: 95%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+.main .cont-cards .card {
+  background-color: rgba(0, 0, 0, 0.521);
+  width: 24%;
+  display: flex;
+  flex-direction: column;
+  position: static;
+  margin: 10px 0px 0 0;
+  border-radius: 4px;
+  color: rgb(194, 194, 194);
+}
+.main .cont-cards .card .body-card,
+.modal .modal-dialog .modal-content .modal-body .card .body-card {
+  padding: 10px;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  gap: 5px;
+}
+.main .cont-cards .card .body-card span,
+.modal .modal-dialog .modal-content .modal-body .card .body-card span {
+  color: white;
+  font-weight: 600;
+  margin-right: 4px;
+  font-size: 17px;
+}
+.main .cont-cards .card .cont-img {
+  position: relative;
+}
+.main .cont-cards .card .cont-img a {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background-color: rgba(138, 138, 138, 0.733);
+  border-radius: 100%;
+  color: rgb(21, 201, 201);
+  padding: 5px 9px;
+  font-size: 18px;
+}
+.main .cont-cards .card .cont-img a:hover {
+  background-color: gainsboro;
+}
+.main .cont-cards .card .cont-img img,
+.modal .modal-dialog .modal-content .modal-body .card .cont-img img {
+  height: 350px;
+  width: 100%;
+  border-radius: 4px 4px 0 0;
+}
+.main .cont-cards .card .body-card h4,
+.modal .modal-dialog .modal-content .modal-body .card .body-card h4 {
+  font-size: 15px;
+  font-weight: normal;
+}
+.main .cont-cards .card .body-card p,
+.main .cont-cards .card .body-card span,
+.modal .modal-dialog .modal-content .modal-body .card .body-card p,
+.modal .modal-dialog .modal-content .modal-body .card .body-card span {
+  margin: 0;
+  font-size: 15px;
+}
+.main .cont-cards .card .body-card ul,
+.modal .modal-dialog .modal-content .modal-body .card .body-card ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+}
+.main .cont-cards .card .body-card ul li,
+.modal .modal-dialog .modal-content .modal-body .card .body-card ul li {
+  padding: 0 3px;
+}
+.main .cont-cards .card .body-card .cont-btn {
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
+  width: 70%;
+  justify-content: space-around;
+  margin: 7px auto;
+  gap: 7px;
+}
+
+/* ----------------archivo movies------------- */
+.main h2 {
+  font-size: 21px;
+  font-weight: normal;
+}
+
+main .main .contenedor-principal {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+main .main .contenedor-principal .flecha-izquierda,
+main .main .contenedor-principal .flecha-derecha {
+  position: absolute;
+  border: none;
+  background: rgb(0, 0, 0, 0.3);
+  font-size: 40px;
+  height: 38.5%;
+  top: calc(50% -25%);
+  line-height: 40px;
+  width: 45px;
+  color: white;
+  cursor: pointer;
+  z-index: 300;
+  transition: 0.3s;
+}
+main .main .contenedor-principal .flecha-izquierda {
+  left: 0;
+}
+main .main .contenedor-principal .flecha-derecha {
+  right: 0;
+}
+main .main .contenedor-principal .flecha-izquierda:hover,
+main .main .contenedor-principal .flecha-derecha:hover {
+  background: rgb(0, 0, 0, 0.8);
+}
+main .main .contenedor-principal .contenedor-carrusel {
+  width: 100%;
+  padding: 20px 0;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+main .main .contenedor-principal .contenedor-carrusel .container-proyect {
+  display: flex;
+  flex-wrap: nowrap;
+}
+main .main .contenedor-principal .contenedor-carrusel .container-proyect .card {
+  min-width: 20%;
+  transition: 1s ease all;
+  box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.3);
+}
+main
+  .main
+  .contenedor-principal
+  .contenedor-carrusel
+  .container-proyect
+  .card:hover {
+  z-index: 100;
+  cursor: pointer;
+  transform: scale(1.1);
+  transform-origin: center;
+  transition: 1s;
+  border-radius: 10px;
+}
+main
+  .main
+  .contenedor-principal
+  .contenedor-carrusel
+  .container-proyect
+  .card:nth-child(1):hover {
+  z-index: 100;
+  transform: scale(1.1);
+  transform-origin: left;
+  transition: 1s;
+}
+main
+  .main
+  .contenedor-principal
+  .contenedor-carrusel
+  .container-proyect
+  .card
+  .cont-img
+  img {
+  width: 100%;
+  height: 100%;
+  max-height: 238px;
+  filter: grayscale(1);
+  object-fit: cover;
+  transition: 0.5s;
+  vertical-align: top;
+}
+main
+  .main
+  .contenedor-principal
+  .contenedor-carrusel
+  .container-proyect
+  .card:hover
+  .cont-img
+  img {
+  filter: grayscale(0);
+  border-radius: 10px;
+}
+main
+  .main
+  .contenedor-principal
+  .contenedor-carrusel
+  .container-proyect
+  .card
+  .body-card {
+  position: absolute;
+  left: 0;
+  background: rgba(0, 0, 0, 0.733);
+  color: var(--color-esp);
+  width: 100%;
+  padding: 10px;
+  opacity: 0;
+  bottom: -40px;
+  transition: 0.5s;
+}
+main
+  .main
+  .contenedor-principal
+  .contenedor-carrusel
+  .container-proyect
+  .card
+  .body-card
+  h4 {
+  padding-bottom: 5px;
+  font-size: 18px;
+  color: rgb(21, 201, 201);
+}
+
+main
+  .main
+  .contenedor-principal
+  .contenedor-carrusel
+  .container-proyect
+  .card:hover
+  .body-card {
+  opacity: 1;
+  bottom: 0px;
+  border-radius: 0 0 10px 10px;
+}
+main
+  .main
+  .contenedor-principal
+  .contenedor-carrusel
+  .container-proyect
+  .card
+  .body-card
+  p,
+main
+  .main
+  .contenedor-principal
+  .contenedor-carrusel
+  .container-proyect
+  .card
+  .body-card
+  ul,
+main
+  .main
+  .contenedor-principal
+  .contenedor-carrusel
+  .container-proyect
+  .card
+  .body-card
+  div,
+main
+  .main
+  .contenedor-principal
+  .contenedor-carrusel
+  .container-proyect
+  .card
+  .cont-img
+  a, main
+  .main
+  .contenedor-principal
+  .contenedor-carrusel
+  .container-proyect
+  .card
+  .body-card
+  h4 span {
+  display: none;
+}
+.main .cont-info {
+  text-align: center;
+  color: white;
+}
+.main .cont-info p {
+  font-size: 19px;
+  margin-bottom: 10px;
+}
+
+main .cont-form {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(180, 180, 180);
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+main .cont-form h2,
+main .cont-about h3 {
+  color: white;
+  text-decoration: 1px underline rgb(23, 214, 214);
+  text-underline-offset: 3px;
+  font-weight: normal;
+  margin-bottom: 10px;
+  font-size: 28px;
+}
+main .cont-form form {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+main .cont-form form img {
+  margin-top: 15px;
+  height: 250px;
+  border-radius: 5px;
+  width: 200px;
+}
+main .cont-form form input,
+main .cont-form form textarea {
+  background: none;
+  border: 1px solid rgb(226, 226, 226);
+  outline: none;
+  margin: 15px 0 0 0;
+  font-size: 14px;
+  border-radius: 15px;
+  line-height: normal;
+  padding: 15px 0 15px 7px;
+  resize: none;
+}
+main .cont-form form input::placeholder,
+main .cont-form form textarea::placeholder {
+  color: rgb(226, 226, 226);
+}
+main .cont-form form .cont-create-btn {
+  display: flex;
+  width: 60%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+main .cont-form form button {
+  margin: 20px auto 0 auto;
+  background: none;
+  border-radius: 20px;
+  color: white;
+  font-size: 14px;
+  border: 1px solid rgb(21, 201, 201);
+  padding: 8px 45px;
+}
+main .cont-form form button:hover {
+  cursor: pointer;
+  background-color: rgb(23, 214, 214);
+  border: 1px solid rgb(21, 201, 201);
+}
+main .cont-form form .cont-create-btn #btn-reset {
+  background-color: none;
+  border: 1px solid red;
+}
+main .cont-form form .cont-create-btn #btn-reset:hover {
+  background-color: red;
+}
+main .cont-form form small {
+  display: none;
+  color: red;
+}
+main .cont-form .error small {
+  display: block;
+}
+
+main .cont-form .error input,
+main .cont-form .error textarea {
+  border: 1px solid red !important;
+}
+
+/* -------------------------archivo about----------------------*/
+
+main .cont-about {
+  background-color: rgb(172, 172, 172);
+  text-align: center;
+  padding: 20px 0 0 0;
+}
+main .cont-about .cont-about-info {
+  width: 85%;
+  margin: 0 auto;
+  text-align: left;
+}
+main .cont-about .cont-about-info .card {
+  padding: 0 0 30px 0;
+  color: rgb(231, 231, 231);
+}
+main .cont-about .cont-about-info .card h4 {
+  margin-bottom: 15px;
+  border: 1px solid rgb(23, 214, 214);
+  width: fit-content;
+  padding: 7px;
+  color: black;
+}
+main .cont-about .cont-about-info .card p {
+  line-height: 25px;
+}
+main .cont-about .cont-about-info .card span {
+  color: black;
+}
+main .cont-about .cont-about-info .card ul li {
+  margin-top: 10px;
+}
+main .cont-about .cont-about-info .card ul li::marker {
+  color: rgb(21, 201, 201) !important;
+  font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  .main .cont-cards .card {
+    width: 31%;
+  }
+  main
+    .main
+    .contenedor-principal
+    .contenedor-carrusel
+    .container-proyect
+    .card
+    .body-card
+    h4 {
+    font-size: 15px;
+  }
+  .main .cont-cards .card .body-card .cont-btn {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main .cont-cards .card .body-card .cont-btn button {
+    width: 90%;
+  }
+}
+
+@media (max-width: 500px) {
+  .main .cont-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main .cont-cards .card {
+    width: 55%;
+    min-width: 200px;
+  }
+  main .main .contenedor-principal .contenedor-carrusel .container-proyect {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  main
+    .main
+    .contenedor-principal
+    .contenedor-carrusel
+    .container-proyect
+    .card {
+    width: 50%;
+    margin: 20px 0;
+    min-width: 200px;
+  }
+  main
+    .main
+    .contenedor-principal
+    .contenedor-carrusel
+    .container-proyect
+    .card:nth-child(1):hover {
+    transform-origin: center;
+  }
+  main .main .contenedor-principal button {
+    display: none;
+  }
+}

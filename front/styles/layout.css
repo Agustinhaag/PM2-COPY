@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: black;
+}
+header {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.801);
+  padding: 15px 0;
+  position: fixed;
+  z-index: 200;
+}
+.close,
+.hamb {
+  cursor: pointer;
+  display: none;
+  transition: 0.4s;
+}
+.header {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+.header div {
+  display: flex;
+  align-items: center;
+  height: 50px;
+ justify-content: right;
+}
+.header img {
+  width: 100px;
+  height: 50px;
+}
+.header nav,
+footer section .cont-footer {
+  display: flex;
+  gap: 20px;
+}
+.header nav a,
+footer section .cont-footer nav a,
+footer section .cont-footer .redes a {
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+.header nav a:hover,
+footer section .cont-footer nav a:hover,
+footer section .cont-footer .redes a:hover {
+  text-decoration: 1px underline white;
+  text-underline-offset: 3px;
+}
+
+footer {
+  width: 100%;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.801);
+  padding: 20px 0 10px 0;
+}
+footer section {
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  margin: 0 auto 20px auto;
+}
+footer section img{
+  width: 130px;
+  height: 80px;
+}
+footer section .cont-footer .redes {
+  align-items: center;
+}
+footer section .cont-footer nav,
+footer section .cont-footer .redes {
+  display: flex;
+  flex-direction: column;
+}
+footer section .cont-footer nav h4,
+footer section .cont-footer .redes h4 {
+  color: rgb(23, 214, 214);
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+.cont-footer nav a,
+.cont-footer .redes a {
+  margin-bottom: 10px;
+}
+
+footer p {
+  text-align: center;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .hamb,
+  .close {
+    display: block;
+    color: white;
+    cursor: pointer;
+    font-size: 17px;
+  }
+  .close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+
+  .header .hamb {
+    position: relative;
+    right: 10px;
+    order: 1 !important;
+  }
+
+  .header nav {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    height: 55vh;
+    background-color: rgba(0, 0, 0, 0.801);
+    justify-content: initial !important;
+    top: 0;
+    right: 0;
+    text-align: right;
+    z-index: 600;
+    padding: 60px 20px 0 20px;
+    transform: translateX(100%);
+    visibility: hidden;
+    width: 150px;
+    border-radius: 0 0 0 10px;
+  }
+
+  nav.visible {
+    transform: translateX(0);
+    visibility: visible;
+    transition: 0.6s;
+    gap: 10px;
+  }
+  nav.visible a {
+    padding: 30px 0;
+    display: block;
+  }
+  footer section .cont-footer .redes {
+    display: none;
+  }
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crear Pelicula</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/layout.css" />
+  </head>
+  <body>
+    <header id="header">
+      <section id="cont-header" class="header"></section>
+    </header>
+    <main>
+      <div class="cont-form">
+        <h2 id="titleForm">Crear película</h2>
+        <form id="formCreate">
+          <input type="text" id="title" name="titulo" placeholder="Título" />
+          <small>Debe ingresar un título</small>
+          <input
+            type="number"
+            id="year"
+            name="año"
+            placeholder="Año de lanzamiento"
+          />
+          <small>Debe ingresar un año</small>
+          <input
+            type="text"
+            id="director"
+            name="director"
+            placeholder="Director"
+          />
+          <small>Debe ingresar el nombre del director</small>
+          <input
+            type="text"
+            id="duration"
+            name="duracion"
+            placeholder="Duración"
+          />
+          <small>Debe ingresar la duración</small>
+          <input type="text" id="genre" name="genero" placeholder="Géneros" />
+          <small>Debe ingresar un género como mínimo</small>
+          <input
+            type="number"
+            id="rate"
+            name="puntuacion"
+            placeholder="Puntuación"
+          />
+          <small>Debe ingresar la puntuación</small>
+          <input
+            type="text"
+            id="poster"
+            name="poster"
+            placeholder="URL poster"
+          />
+          <small>Debe ingresar un link válido</small>
+          <img src="" alt="" id="img" />
+          <div class="cont-create-btn">
+            <button id="btn-create">Crear</button>
+            <button id="btn-reset">Reset</button>
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer id="footer"></footer>
+    <script
+      src="https://kit.fontawesome.com/6fe6321916.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../public/bundle.js"></script>
+  </body>
+</html>
